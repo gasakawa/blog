@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `My blog`,
-    description: `A blog about frontend development and other cool stuff`,
-    author: `@gasakawa`,
+    title: `Gabriel Asakawa`,
+    description: `Espaço para compartilhar idéias sobre tecnologia, programação, basquete e muito mais, espero ajudar a outros com as minhas experiências.`,    
+    position: "A human being"
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -24,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/gasakawa-icon.png`
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
