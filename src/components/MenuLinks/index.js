@@ -4,7 +4,6 @@ import links from "./content"
 
 import * as S from "./styled"
 
-console.log(links)
 
 const MenuLinks = () => (
   <S.MenuLinksWrapper>
