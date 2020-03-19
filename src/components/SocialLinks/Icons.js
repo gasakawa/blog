@@ -1,8 +1,8 @@
-import { Github } from 'styled-icons/boxicons-logos/Github'
-import { Twitter } from "styled-icons/boxicons-logos/Twitter"
-import { Facebook } from "styled-icons/boxicons-logos/Facebook"
-import { Instagram } from "styled-icons/boxicons-logos/Instagram"
-import {Linkedin} from 'styled-icons/boxicons-logos/Linkedin'
+import { Github } from "styled-icons/boxicons-logos"
+import { Twitter } from "styled-icons/boxicons-logos"
+import { Facebook } from "styled-icons/boxicons-logos"
+import { Instagram } from "styled-icons/boxicons-logos"
+import { Linkedin } from "styled-icons/boxicons-logos"
 
 const Icons = {
   Github,
