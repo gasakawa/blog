@@ -1,12 +1,14 @@
 import React from 'react';
 
-import { Home } from "styled-icons/boxicons-solid"
-import { SearchAlt2 as Search } from "styled-icons/boxicons-regular"
-import { UpArrowAlt as Arrow } from "styled-icons/boxicons-regular"
-import { Lightbulb as Light } from "styled-icons/typicons"
-import { Grid } from "styled-icons/boxicons-solid"
+import { Home, Grid } from 'styled-icons/boxicons-solid';
+import {
+  SearchAlt2 as Search,
+  UpArrowAlt as Arrow,
+} from 'styled-icons/boxicons-regular';
 
-import * as S from './styled'
+import { Lightbulb as Light } from 'styled-icons/typicons';
+
+import * as S from './styled';
 
 const MenuBar = () => (
   <S.MenuBarWrapper>
@@ -35,6 +37,6 @@ const MenuBar = () => (
       </S.MenuBarItem>
     </S.MenuBarGroup>
   </S.MenuBarWrapper>
-)
+);
 
-export default MenuBar
+export default MenuBar;

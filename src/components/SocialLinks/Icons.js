@@ -1,8 +1,10 @@
-import { Github } from "styled-icons/boxicons-logos"
-import { Twitter } from "styled-icons/boxicons-logos"
-import { Facebook } from "styled-icons/boxicons-logos"
-import { Instagram } from "styled-icons/boxicons-logos"
-import { Linkedin } from "styled-icons/boxicons-logos"
+import {
+  Github,
+  Twitter,
+  Facebook,
+  Instagram,
+  Linkedin,
+} from 'styled-icons/boxicons-logos';
 
 const Icons = {
   Github,
@@ -10,6 +12,6 @@ const Icons = {
   Facebook,
   Instagram,
   Linkedin,
-}
+};
 
-export default Icons
+export default Icons;

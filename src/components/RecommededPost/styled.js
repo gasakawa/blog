@@ -1,12 +1,12 @@
-import styled from "styled-components"
-import { Link } from "gatsby"
+import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 export const RecommendedWrapper = styled.section`
   border-bottom: 1px solid #38444d;
   border-top: 1px solid #38444d;
   background: #192734;
   display: flex;
-`
+`;
 
 export const RecommendedLink = styled(Link)`
   align-items: center;
@@ -34,4 +34,4 @@ export const RecommendedLink = styled(Link)`
     content: "\\2192";
     margin-left: 0.5rem;
   }
-`
+`;

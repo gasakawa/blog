@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const PaginationWrapper = styled.section`
   align-items: center;
@@ -15,4 +15,4 @@ export const PaginationWrapper = styled.section`
       color: #1fa1f2;
     }
   }
-`
+`;

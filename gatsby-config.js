@@ -1,87 +1,88 @@
-require("dotenv").config()
+require('dotenv').config();
 
-const queries = require("./src/utils/algolia_queries")
+const queries = require('./src/utils/algolia_queries');
 
 module.exports = {
   siteMetadata: {
-    title: `Gabriel Asakawa`,
-    description: `Espaço para compartilhar idéias sobre tecnologia, programação, basquete e muito mais, espero ajudar a outros com as minhas experiências.`,
-    position: "A human being",
+    title: 'Gabriel Asakawa',
+    description:
+      'Espaço para compartilhar idéias sobre tecnologia, programação, basquete e muito mais, espero ajudar a outros com as minhas experiências.',
+    position: 'A human being',
   },
   plugins: [
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
     // needs to be the first one to work with gatsby-remark-images
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `uploads`,
+        name: 'uploads',
         path: `${__dirname}/static/assets/img`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `posts`,
+        name: 'posts',
         path: `${__dirname}/posts`,
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-relative-images",
+            resolve: 'gatsby-remark-relative-images',
             options: {
-              name: "uploads",
+              name: 'uploads',
             },
           },
           {
-            resolve: "gatsby-remark-images",
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 960,
               linkImagesToOriginal: false,
             },
           },
-          `gatsby-remark-lazy-load`,
-          `gatsby-remark-prismjs`,
+          'gatsby-remark-lazy-load',
+          'gatsby-remark-prismjs',
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-algolia-search`,
+      resolve: 'gatsby-plugin-algolia-search',
       options: {
-        appId: process.env.ALGOLIA_APP_ID,
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        indexName: process.env.ALGOLIA_INDEX_NAME,
+        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
         queries,
         chunkSize: 10000, // default: 1000
         enablePartialUpdates: true,
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/my_icon.png`,
+        name: 'gatsby-starter-default',
+        short_name: 'starter',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/images/my_icon.png',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

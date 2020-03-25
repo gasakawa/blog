@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const CommentsWrapper = styled.section`
   margin: auto;
@@ -12,11 +12,11 @@ export const CommentsWrapper = styled.section`
       color: #1fa1f2 !important;
     }
   }
-`
+`;
 
 export const CommentsTitle = styled.h2`
   color: #fff;
   font-size: 2.1rem;
   font-weight: 700;
   padding-bottom: 2rem;
-`
+`;

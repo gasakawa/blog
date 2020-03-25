@@ -1,15 +1,14 @@
-import React from "react"
+import React from 'react';
 
-import links from "./content"
+import links from './content';
 
-import * as S from "./styled"
-
+import * as S from './styled';
 
 const MenuLinks = () => (
   <S.MenuLinksWrapper>
     <S.MenuLinksList>
-      {links.map((link, i) => (
-        <S.MenuLinksItem key={i}>
+      {links.map(link => (
+        <S.MenuLinksItem key={link.label}>
           <S.MenuLinksLink to={link.url} activeClassName="active">
             {link.label}
           </S.MenuLinksLink>
@@ -17,6 +16,6 @@ const MenuLinks = () => (
       ))}
     </S.MenuLinksList>
   </S.MenuLinksWrapper>
-)
+);
 
-export default MenuLinks
+export default MenuLinks;

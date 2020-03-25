@@ -10,6 +10,7 @@ const postsQuery = `{
         }
         frontmatter {
           category
+          background
           date_timestamp: date
           date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
           description
@@ -19,27 +20,25 @@ const postsQuery = `{
       }
     }
   }
-}`
+}`;
 
-const flatten = arr => {
-  arr.map(({ node: { frontmatter, ...rest } }) => ({
-    ...frontmatter,
-    date_timestamp: parseInt(
-      (new Date(frontmatter.date_timestamp).getTime() / 1000).toFixed(0)
-    ),
-    ...rest,
-  }))
-}
+const flatten = arr => arr.map(({ node: { frontmatter, ...rest } }) => ({
+  ...frontmatter,
+  date_timestamp: parseInt(
+    (new Date(frontmatter.date_timestamp).getTime() / 1000).toFixed(0),
+  ),
+  ...rest,
+}));
 
 const queries = [
   {
     query: postsQuery,
     transformer: ({ data }) => flatten(data.posts.edges), // optional
-    indexName: "Posts",
+    indexName: 'Posts',
     settings: {
-      attributesToSnippet: ["excerpt:20"],
+      attributesToSnippet: ['excerpt:20'],
     },
   },
-]
+];
 
-module.exports = queries
+module.exports = queries;

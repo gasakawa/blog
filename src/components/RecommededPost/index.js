@@ -1,6 +1,6 @@
-import React from "react"
-import propTypes from "prop-types"
-import * as S from "./styled"
+import React from 'react';
+import propTypes from 'prop-types';
+import * as S from './styled';
 
 const RecommendedPosts = ({ next, previous }) => (
   <S.RecommendedWrapper>
@@ -15,7 +15,7 @@ const RecommendedPosts = ({ next, previous }) => (
       </S.RecommendedLink>
     )}
   </S.RecommendedWrapper>
-)
+);
 
 RecommendedPosts.propTypes = {
   next: propTypes.shape({
@@ -34,6 +34,6 @@ RecommendedPosts.propTypes = {
       slug: propTypes.string.isRequired,
     }),
   }),
-}
+};
 
-export default RecommendedPosts
+export default RecommendedPosts;
