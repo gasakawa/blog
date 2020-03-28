@@ -16,11 +16,7 @@ const BlogPost = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} />
-      <h1>
-        Title:
-        {post.frontmatter.title}
-      </h1>
+      <SEO title={post.frontmatter.title} />      
       <S.PostHeader>
         <S.PostDate>
           {post.frontmatter.date}

@@ -30,7 +30,9 @@ const Profile = () => {
           <S.ProfilePosition>{position}</S.ProfilePosition>
         </S.ProfileAuthor>
       </S.ProfileLink>
-      <h3>{description}</h3>
+      <S.ProfileDescription>
+        {description}
+      </S.ProfileDescription>
     </S.ProfileWrapper>
   );
 };
