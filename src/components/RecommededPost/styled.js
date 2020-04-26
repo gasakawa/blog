@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export const RecommendedWrapper = styled.section`
   border-bottom: 1px solid var(--borders);
@@ -9,7 +9,7 @@ export const RecommendedWrapper = styled.section`
   display: flex;
 `;
 
-export const RecommendedLink = styled(Link)`
+export const RecommendedLink = styled(AniLink)`
   align-items: center;
   background: var(--mediumBackground);
   color: var(--highlight);
@@ -33,11 +33,11 @@ export const RecommendedLink = styled(Link)`
     justify-content: flex-end;
   }
   &.previous:before {
-    content: "\\2190";
+    content: '\\2190';
     margin-right: 0.5rem;
   }
   &.next:after {
-    content: "\\2192";
+    content: '\\2192';
     margin-left: 0.5rem;
   }
 `;

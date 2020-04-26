@@ -8,8 +8,11 @@ module.exports = {
     description:
       'Espaço para compartilhar idéias sobre tecnologia, programação, basquete e muito mais, espero ajudar a outros com as minhas experiências.',
     position: 'A human being',
+    author: '@gasakawa',
+    siteUrl: 'https://gasakawa.com',
   },
   plugins: [
+    'gatsby-plugin-transition-link',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     // needs to be the first one to work with gatsby-remark-images
@@ -72,17 +75,18 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Gabriel Asakawa',
+        short_name: 'gasakawa',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#16202c',
+        theme_color: '#16202c',
         display: 'minimal-ui',
-        icon: 'src/images/my_icon.png',
+        icon: 'src/images/gasakawa-icon.png',
       },
     },
+    'gatsby-plugin-sitemap',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    'gatsby-plugin-offline',
   ],
 };
