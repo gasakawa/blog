@@ -55,10 +55,10 @@ export const MenuBarItem = styled.span`
   width: 3.75rem;
 
   &.light {
-    color: #feda77;
+    color: #f6003c;
 
     &:hover {
-      color: #ffe869;
+      color: #333333;
     }
   }
   &:hover {

@@ -8,7 +8,7 @@
     "@types/react": "^16.0.0",
     "algoliasearch": "^4.1.0",
     "dotenv": "^8.2.0",
-    "gatsby": "^2.17.6",
+    "gatsby": "^2.21.0",
     "gatsby-cli": "^2.11.22",
     "gatsby-image": "^2.2.30",
     "gatsby-plugin-algolia-search": "0.5.0",
@@ -60,7 +60,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "yarn run develop",
