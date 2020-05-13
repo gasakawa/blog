@@ -17,6 +17,7 @@ Neste post, vou focar somente na alteração de propriedades CSS em arquivos loc
 ### _ Isto somente funciona em arquivos locais da sua máquina, não é possível alterar CSS/HTML/Javascript de sites remotos _
 
 # Google Chrome
+Realizar alterações no Google Chrome pode parecer um pouco "complicado", porém não é difícil, então vamos ao passo a passo.
 
 ## 1. Inclua os arquivos locais como workspace no navegador
 No Google Chrome é necessário incluir o diretório com os arquivos do seu projeto web, no workspace do navegador. Para isto abra o DevTools e na aba _"Sources"_ clique em _"Add folder to workspace"_
@@ -37,7 +38,7 @@ Esta forma é mais simples é deve ser a mais utilizada pelos desenvolvedores (p
 
 ![](/assets/img/gasakawa-devtools-chrome-css-change.png)
 
-## 4. Visualize as alterações
+## 4. Visualize e salve as alterações
 As alterações são percebidas automaticamente na tela a cada mudança no código, mas é possível visualizar as alterações no código também (como se fosse o git). 
 
 ![](/assets/img/gasakawa-devtools-local-modifications.png)
@@ -48,4 +49,24 @@ Note que os arquivos alterados ficam com um asterisco (*) do lado, então se cli
 
 Salve as mudanças com Ctrl + S e pronto as alterações serão refletidas no seu filesystem diretamente.
 
+# Mozilla Firefox
+Realizar estas alterações locais no Firefox é muito mais simples, vamos ver o passo a passo.
+
+## 1. Selecione o elemento HTML para editar o seu estilo.
+![](/assets/img/gasakawa-devtools-firefox-element.png)
+
+## 2. Edite o CSS 
+![](/assets/img/gasakawa-devtools-firefox-css-change.png)
+
+Note que na propriedade do CSS que foi feita a alteraçao, fica uma marca da cor verde do lado esquerdo. Esta é a forma com a qual o Firefox sinaliza as alterações.
+
+## 3. Salve as alterações
+Salvar as alterações é muito simples, basta clicar na aba _"Editor de estilos"_ e na sequência clicar em _"Salvar"_ do lado de cada arquivo que foi modificado.
+
+![](/assets/img/gasakawa-devtools-firefox-save.png)
+
+# Conclusão
+Editar CSS diretamente no navegador facilita muito a validação das alterações, poder salvar diretamente do navegador estas alterações no nosso computador local agiliza um pouco o desenvolvimento. 
+
+Se tiver dúvidas, elogios, sugestões, deixe seu comentário. Se também curtiu o conteúdo, compartilhe com os seus amigos.
 
