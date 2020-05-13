@@ -23,11 +23,23 @@ No Google Chrome é necessário incluir o diretório com os arquivos do seu proj
 
 ![](/assets/img/gasakawa-devtools-chrome-workspace.png)
 
+O navegador, vai solicitar acesso ao diretório que deseja incluir. Uma vez liberado o acesso o diretório e arquivos deve aparecer no workspace
+
+![](/assets/img/gasakawa-devtools-workspace-added.png)
+
+![](/assets/img/gasakawa-devtools-ask-permissions.png)
 
 ## 2. Selecione o elemento HTML para editar o seu estilo.
 ![](/assets/img/gasakawa-devtools-element.png)
 
-## 3. Edite o CSS
+## 3. Edite o CSS na aba _"Styles"_
+Esta forma é mais simples é deve ser a mais utilizada pelos desenvolvedores (pelo menos é a que eu mais utilizo) ;)
+
 ![](/assets/img/gasakawa-devtools-chrome-css-change.png)
+
+## 4. Visualize as alterações
+As alterações são percebidas automaticamente na tela a cada mudança no código, mas é possível visualizar as alterações no código também (como se fosse o git).
+
+![](/assets/img/gasakawa-devtools-local-modifications.png)
 
 
