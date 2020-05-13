@@ -38,8 +38,14 @@ Esta forma é mais simples é deve ser a mais utilizada pelos desenvolvedores (p
 ![](/assets/img/gasakawa-devtools-chrome-css-change.png)
 
 ## 4. Visualize as alterações
-As alterações são percebidas automaticamente na tela a cada mudança no código, mas é possível visualizar as alterações no código também (como se fosse o git).
+As alterações são percebidas automaticamente na tela a cada mudança no código, mas é possível visualizar as alterações no código também (como se fosse o git). 
 
 ![](/assets/img/gasakawa-devtools-local-modifications.png)
+
+Note que os arquivos alterados ficam com um asterisco (*) do lado, então se clicar na opção _"Local modifications..."_,  habilita uma nova aba chamada _"Changes"_, onde é possível visualizar as alterações feitas em todos os arquivos do workspace.
+
+![](/assets/img/gasakawa-dev-tools-changes.png)
+
+Salve as mudanças com Ctrl + S e pronto as alterações serão refletidas no seu filesystem diretamente.
 
 
