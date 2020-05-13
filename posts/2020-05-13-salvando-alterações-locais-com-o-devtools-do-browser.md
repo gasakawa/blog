@@ -1,8 +1,7 @@
 ---
 title: Salvando alterações locais com o DevTools do browser
-description: Como salvar aquelas mudanças pontuais no CSS ou HTML direto na sua
-  máquina usando DevTools
-date: 2020-05-13 03:22:29
+description: Como salvar mudanças no CSS ou HTML direto na sua máquina usando DevTools
+date: 2020-05-13T03:22:29.000Z
 thumbnail: assets/img/chrome-devtools.jpg
 category: Misc
 background: "#7AAB13"
@@ -11,4 +10,24 @@ Muitas vezes na hora de desenvolver um site ou uma página web, nos deparamos co
 
 Para isto utilizamos o **DevTools** no [Google Chrome](https://developers.google.com/web/tools/chrome-devtools) ou do [Mozilla Firefox](https://developer.mozilla.org/pt-BR/docs/Tools).
 
-Esta ferramenta que vem junto com os navegadores modernos, 
+Esta ferramenta que vem junto com os navegadores modernos, são uma "mão na roda" para os desenvolvedores na hora de analisar, criar, validar funcionalidades e comportamentos de  HTML, CSS  e Javascript nas páginas web.
+
+Neste post, vou focar somente na alteração de propriedades CSS em arquivos locais e como salvar as mesmas diretamente do browser, sem necessidade de abrir o código fonte no seu editor favorito.
+
+### _ Isto somente funciona em arquivos locais da sua máquina, não é possível alterar CSS/HTML/Javascript de sites remotos _
+
+# Google Chrome
+
+## 1. Inclua os arquivos locais como workspace no navegador
+No Google Chrome é necessário incluir o diretório com os arquivos do seu projeto web, no workspace do navegador. Para isto abra o DevTools e na aba _"Sources"_ clique em _"Add folder to workspace"_
+
+![](/assets/img/gasakawa-devtools-chrome-workspace.png)
+
+
+## 2. Selecione o elemento HTML para editar o seu estilo.
+![](/assets/img/gasakawa-devtools-element.png)
+
+## 3. Edite o CSS
+![](/assets/img/gasakawa-devtools-chrome-css-change.png)
+
+
