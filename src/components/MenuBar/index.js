@@ -10,6 +10,7 @@ import {
 import { Lightbulb as Light, ThList as List } from 'styled-icons/typicons';
 
 import * as S from './styled';
+import * as GA from './trackers';
 import getThemeColor from '../../utils/getThemeColor';
 
 const MenuBar = () => {
@@ -49,7 +50,11 @@ const MenuBar = () => {
           bg={getThemeColor()}
           title="Pesquisar"
         >
-          <S.MenuBarItem>
+          <S.MenuBarItem
+            onClick={() => {
+              GA.searchClickTrack();
+            }}
+          >
             <Search />
           </S.MenuBarItem>
         </S.MenuBarLink>
@@ -60,6 +65,16 @@ const MenuBar = () => {
           title={isDarkMode ? 'Light Mode' : 'Dark Mode'}
           onClick={() => {
             window.__setPreferredTheme(isDarkMode ? 'light' : 'dark');
+
+            GA.themeTrack(isDarkMode ? 'light' : 'dark');
+
+            if (window.DISQUS !== undefined) {
+              window.setTimeout(() => {
+                window.DISQUS.reset({
+                  reload: true,
+                });
+              }, 300);
+            }
           }}
           className={theme}
         >
@@ -69,12 +84,18 @@ const MenuBar = () => {
           title="Mudar visualização"
           onClick={() => {
             window.__setPreferredDisplay(isListMode ? 'grid' : 'list');
+            GA.displayTrack(isListMode ? 'grid' : 'list');
           }}
           className="display"
         >
           {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>
-        <S.MenuBarItem title="Ir para o topo">
+        <S.MenuBarItem
+          title="Ir para o topo"
+          onClick={() => {
+            window.scroll({ top: 0, behavior: 'smooth' });
+          }}
+        >
           <Arrow />
         </S.MenuBarItem>
       </S.MenuBarGroup>

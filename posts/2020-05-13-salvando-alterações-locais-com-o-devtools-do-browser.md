@@ -15,7 +15,7 @@ Esta ferramenta que vem junto com os browsers modernos, são uma "mão na roda" 
 
 Neste post, vou focar somente na alteração de propriedades CSS em arquivos locais e como salvar as mesmas diretamente do browser, sem necessidade de abrir o código fonte no seu editor favorito.
 
-### _ Isto somente funciona em arquivos locais da sua máquina, não é possível alterar CSS/HTML/Javascript de sites remotos _
+### _Isto somente funciona em arquivos locais da sua máquina, não é possível alterar CSS/HTML/Javascript de sites remotos_
 
 # Google Chrome
 

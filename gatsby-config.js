@@ -89,5 +89,12 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify-cms',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: process.env.GA_TRACKING_ID,
+        head: false,
+      },
+    },
   ],
 };

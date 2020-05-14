@@ -1,8 +1,17 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import ReactGA from 'react-ga';
 
 import * as S from './styled';
 import getThemeColor from '../../utils/getThemeColor';
+
+const RecommendedClickTrack = () => {
+  ReactGA.event({
+    category: 'menu link',
+    action: 'click',
+    label: 'Clicou num recommended link',
+  });
+};
 
 const RecommendedPosts = ({ next, previous }) => (
   <S.RecommendedWrapper>
@@ -14,6 +23,7 @@ const RecommendedPosts = ({ next, previous }) => (
         duration={0.6}
         bg={getThemeColor()}
         className="previous"
+        onClick={() => RecommendedClickTrack()}
       >
         {previous.frontmatter.title}
       </S.RecommendedLink>
@@ -26,6 +36,7 @@ const RecommendedPosts = ({ next, previous }) => (
         duration={0.6}
         bg={getThemeColor()}
         className="next"
+        onClick={() => RecommendedClickTrack()}
       >
         {next.frontmatter.title}
       </S.RecommendedLink>
