@@ -13,6 +13,6 @@ Venho ~~enrolando~~ planejando este blog há pelo menos uns 5 anos :), porém pe
 
 Vou tentar juntar algumas das minhas paixões (tecnologia, programação, video game, basquete e música, etc) neste espaço e compartilhar um pouco do conhecimento e experiência que adquiri na carreira profissional, que com certeza irá ajudar alguém de alguma forma.
 
-> Ensinar é aprender duas vezes -- "Joseph Joubert"
+> "Ensinar é aprender duas vezes" -- Joseph Joubert
 
 Não sou o dono da verdade, e espero que você curta e compartilhe o conteúdo que será criado aqui e o mais importante é que deixe o seu feedback ou sugestão. _**Seja muito bem vindo**_.

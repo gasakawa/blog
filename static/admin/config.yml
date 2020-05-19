@@ -36,13 +36,14 @@ collections:
           widget: 'select',
           options:
             [
-              { label: 'Basket', value: '#B31917' },
-              { label: 'CSS', value: '#2DA0C3' },
-              { label: 'JS', value: '#F0D91D' },
-              { label: 'HTML', value: '#EB7728' },
-              { label: 'Java', value: '#CA1F22' },
-              { label: 'Cloud', value: '#4081ED' },
-              { label: 'Misc', value: '#7AAB13' },
+              { label: 'Red - Basket', value: '#B31917' },
+              { label: 'Blue - CSS', value: '#3b9ce5' },
+              { label: 'Yellow - JS', value: '#F0D91D' },
+              { label: 'Orange - HTML', value: '#EB7728' },
+              { label: 'Red - Java', value: '#CA1F22' },
+              { label: 'Blue - Cloud', value: '#4081ED' },
+              { label: 'Green - Misc', value: '#7AAB13' },
+              { labe: 'Mustard - Dev', value: '#FCB005' },
             ],
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
