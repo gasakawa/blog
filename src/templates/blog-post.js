@@ -15,6 +15,10 @@ const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark;
   const next = pageContext.nextPost;
   const previous = pageContext.previousPost;
+  const keywords =
+    post.frontmatter.keywords.length > 0
+      ? post.frontmatter.keywords.split(';')
+      : [];
 
   return (
     <Layout>
@@ -29,6 +33,15 @@ const BlogPost = ({ data, pageContext }) => {
         </S.PostDate>
         <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
         <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
+        {keywords.length > 0 && (
+          <S.PostKeyword>
+            {keywords.map((kw, idx) => (
+              <div className="kw-item" key={idx}>
+                {kw}
+              </div>
+            ))}
+          </S.PostKeyword>
+        )}
       </S.PostHeader>
       <S.MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -47,6 +60,7 @@ export const query = graphql`
         description
         title
         image
+        keywords
       }
       fields {
         slug

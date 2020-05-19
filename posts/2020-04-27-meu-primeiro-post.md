@@ -5,6 +5,7 @@ description: Seja bem-vindo
 category: Misc
 background: '#7AAB13'
 image: ''
+keywords: ''
 ---
 
 # O que esperar deste blog?

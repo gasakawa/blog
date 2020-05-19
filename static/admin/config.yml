@@ -43,7 +43,8 @@ collections:
               { label: 'Red - Java', value: '#CA1F22' },
               { label: 'Blue - Cloud', value: '#4081ED' },
               { label: 'Green - Misc', value: '#7AAB13' },
-              { labe: 'Mustard - Dev', value: '#FCB005' },
+              { label: 'Mustard - Dev', value: '#FCB005' },
             ],
         }
+      - { label: 'Keywords', name: 'keywords', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

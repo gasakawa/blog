@@ -48,6 +48,25 @@ export const PostDate = styled.p`
   `}
 `;
 
+export const PostKeyword = styled.div`
+  display: flex;
+  margin: 0 0.1em;
+  padding: 0.2rem;
+
+  .kw-item {
+    margin: 1rem;
+    border: 1px solid var(--highlight);
+    color: #1fa1f2;
+    padding: 0.3rem;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: var(--highlight);
+      color: #fff;
+    }
+  }
+`;
+
 export const MainContent = styled.section`
   margin: auto;
   max-width: 70rem;
