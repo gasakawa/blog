@@ -12,7 +12,7 @@ A sintaxe da atribuição via desestruturação é uma expressão JavaScript que
 
 Você pode ser perguntar, *para que vou fazer isso*? *ou como isso me ajuda*? Bom para responder sua pergunta, vamos ver os exemplos abaixo.
 
-## Desestructurando Arrays
+## Desestruturando Arrays
 
 ```javascript
 const lista = ['Gabriel', 'Asakawa', 'Brasil']
@@ -26,7 +26,7 @@ console.log(nome, sobrenome, pais) // Gabriel Asakawa Brasil
 
 No código acima, usei uma forma de extrair elementos de um array que funciona e era muito utilizada, porém veja que devo indicar a posição de cada elemento do array em uma linha diferente. Isto torna o código mais verboso.
 
-Utilizando a desestructuração o código pode ser reduzido, veja algums cenários.
+Utilizando a desestrutração o código pode ser reduzido, veja algums cenários.
 
 ### Básico
 
@@ -37,7 +37,7 @@ const [nome, sobrenome, pais] = lista
 console.log(nome, sobrenome, pais) // Gabriel Asakawa Brasil
 ```
 
-Utilizando a funcionalidade de desestructuração do JS, o código tem menos linhas e é mais fácil de ler.
+Utilizando a funcionalidade de desestrutração do JS, o código tem menos linhas e é mais fácil de ler.
 
 ### Pulando elementos do array
 
@@ -74,9 +74,9 @@ console.log(nome) // Gabriel
 console.log(outros) // ['Pai', 'Desenvolvedor', 'Nerd']
 ```
 
-## Desestructurando Objetos
+## Desestruturando Objetos
 
-A desestructuração de um objeto é similar à do array, a diferença é o uso de chaves **{ }** no lugar de colchetes **[ ]**.
+A desestrutração de um objeto é similar à do array, a diferença é o uso de chaves **{ }** no lugar de colchetes **[ ]**.
 
 ```javascript
 const pessoa = {
@@ -91,7 +91,7 @@ const pais = pessoa.pais // Brasil
 console.log(nome, sobrenome, pais) // Gabriel Asakawa Brasil
 ```
 
-No código acima, usei uma forma de extrair elementos de um objeto que funciona bem, mas o código é verboso e repetitivo. Então mais uma vez podemos utilizar a desestructuração e o código pode ser reduzido, veja algums cenários.
+No código acima, usei uma forma de extrair elementos de um objeto que funciona bem, mas o código é verboso e repetitivo. Então mais uma vez podemos utilizar a desestrutração e o código pode ser reduzido, veja algums cenários.
 
 ### Básico
 
@@ -110,7 +110,7 @@ const {nome, sobre, pais} = pessoa
 console.log(nome, sobre, pais) // Gabriel undefined Brasil
 ```
 
-Na desestructuração de objetos direta, o nome da variável que irá receber o valor da propriedade do objeto, **deve** ser igual ao nome da propriedade do objeto. Caso contrário a atribuição do valor não será feita.
+Na desestrutração de objetos direta, o nome da variável que irá receber o valor da propriedade do objeto, **deve** ser igual ao nome da propriedade do objeto. Caso contrário a atribuição do valor não será feita.
 
 ### Objetos aninhados
 
@@ -131,7 +131,7 @@ console.log(nome, sobrenome, rua, cep) // Gabriel Asakawa Av. Paulista 00000-000
 
 ### Nomes de variáveis diferentes
 
-Como falei antes, na hora de desestructurar um objeto de forma direta, o nome da variável que irá receber o valor da proprieade do objeto deve ser igual, porém é possível usar outro nome de variável caso seja necessário.
+Como falei antes, na hora de desestrutrar um objeto de forma direta, o nome da variável que irá receber o valor da proprieade do objeto deve ser igual, porém é possível usar outro nome de variável caso seja necessário.
 
 ```javascript
 const pessoa = {
@@ -148,6 +148,6 @@ Outro casos de uso, podem ser vistos [aqui](https://developer.mozilla.org/en-US/
 
 ### Conclusão
 
-Utilizar a desestructuração, ajuda a reduzir linhas de código e permite que o código seja mais legível. Além disso é possível também extrair somente os dados de um array ou objeto, que realmente são necessários naquele momento.
+Utilizar a desestrutração, ajuda a reduzir linhas de código e permite que o código seja mais legível. Além disso é possível também extrair somente os dados de um array ou objeto, que realmente são necessários naquele momento.
 
 Se tiver dúvidas, elogios, sugestões, deixe seu comentário. Se também curtiu o conteúdo, compartilhe com os seus amigos.
