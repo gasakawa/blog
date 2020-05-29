@@ -17,7 +17,7 @@ const links = [
   },
   {
     label: 'Linkedin',
-    url: 'https://www.linkedin.com/in/gabriel-asakawa-590147a',
+    url: 'https://www.linkedin.com/in/gabriel-asakawa',
   },
 ];
 
