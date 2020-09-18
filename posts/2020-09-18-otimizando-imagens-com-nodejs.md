@@ -6,7 +6,7 @@ description: Como otimizar imágens utilizando a lib sharp
 category: JS
 background: '#F0D91D'
 image: 'assets/img/compactar-imagem.png'
-keywords: 'ferramentas;development;productivity'
+keywords: 'javascript;nodejs'
 ---
 
 Estava fazendo um projeto pessoal e me deparei com a necessidade de otimizar o tamanho das imágens que precisava utilizar. Existem vários serviços online para isto, (redimensionar, cortar, reduzir peso, etc). Porém encontrei uma lib javascript bastante interessante. O nome dela é [sharp](https://github.com/lovell/sharp) e quero compartilhar com vocês como resolvi o meu problema.
