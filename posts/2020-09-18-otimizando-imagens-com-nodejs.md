@@ -1,15 +1,15 @@
 ---
 
 date: 2020-09-18 00:00:00
-title: Otimizando imágens com NodeJS
-description: Como otimizar imágens utilizando a lib sharp
+title: Otimizando imagens com NodeJS
+description: Como otimizar imagens utilizando a lib sharp
 category: JS
 background: '#F0D91D'
 image: 'assets/img/compactar-imagem.png'
 keywords: 'javascript;nodejs'
 ---
 
-Estava fazendo um projeto pessoal e me deparei com a necessidade de otimizar o tamanho das imágens que precisava utilizar. Existem vários serviços online para isto, (redimensionar, cortar, reduzir peso, etc). Porém encontrei uma lib javascript bastante interessante. O nome dela é [sharp](https://github.com/lovell/sharp) e quero compartilhar com vocês como resolvi o meu problema.
+Estava fazendo um projeto pessoal e me deparei com a necessidade de otimizar o tamanho das imagens que precisava utilizar. Existem vários serviços online para isto, (redimensionar, cortar, reduzir peso, etc). Porém encontrei uma lib javascript bastante interessante. O nome dela é [sharp](https://github.com/lovell/sharp) e quero compartilhar com vocês como resolvi o meu problema.
 
 O código é bem simples porém poderoso :), (pode clonar ele do [Github](https://github.com/gasakawa/image-compress)).
 
@@ -97,19 +97,19 @@ const compressContent = await sharp(content)
 .toBuffer();
 ```
 
-- `resize`, redemensiona o tamnho da imágem, aqui pode usar o tamanho definido nas variáveis de ambiente.
-- `toFormat`, converte a imágem em `jpg` sempre.
+- `resize`, redemensiona o tamanho da imágem, aqui pode usar o tamanho definido nas variáveis de ambiente.
+- `toFormat`, converte a imagem em `jpg` sempre.
 - `toBuffer` , retorna o conteúdo da imágem em um `Buffer`.
 
 
 
 ### Exemplo
 
-Imágem antes de ser otimizada.
+Imagem antes de ser otimizada.
 
 ![Imágem antes de Otimizar](/assets/img/tamanho-imagens-antes-optimizar.png)
 
-Imágem depoise de ser otimizada.
+Imagem depois de ser otimizada.
 
 ![Imágem antes de Otimizar](/assets/img/tamanho-imagens-apos-optimizar.png)
 
