@@ -34,3 +34,15 @@ body {
     text-wrap: balance;
   }
 }
+
+a {
+  color: #2f3459;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.5s, text-decoration 1s;
+}
+
+a:hover {
+  color: #1fa1f2;
+  text-decoration: underline;
+}

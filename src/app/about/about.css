@@ -1,0 +1,50 @@
+.about-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
+  grid-template-rows: 100px;
+  grid-auto-rows: 100px;
+  gap: 10px;
+}
+
+.about-icons span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-icons p {
+  opacity: 0;
+}
+
+.about-icons svg:hover {
+  color: #1fa1f2;
+  animation: pulse 2s ease-in-out 0s;
+}
+
+.about-icons img:hover {
+  color: #1fa1f2;
+  animation: pulse 2s ease-in-out 0s;
+}
+
+.about-icons span:hover p {
+  background: #3d423f;
+  padding: 3px 3px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.6rem;
+  margin-top: 60px;
+  display: block;
+  position: absolute;
+  opacity: 100;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
