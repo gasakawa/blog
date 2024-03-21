@@ -1,7 +1,14 @@
+import { getPaginationData, getPosts } from '@/database/db';
+import PostList from './components/PostList';
 
+export default async function Home() {
+  const pagination = await getPaginationData();
 
-export default function Home() {
+  const posts = await getPosts(0, pagination.postPerPage);
+
   return (
-    <h1>Agora vai</h1>
+    <div>
+      <PostList posts={posts} />
+    </div>
   );
 }
