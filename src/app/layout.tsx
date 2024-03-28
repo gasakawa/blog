@@ -1,15 +1,15 @@
 import { Inter, Baloo_2 } from 'next/font/google';
 import './globals.css';
 import Sidebar from './components/Sidebar';
-import { generateMetadata } from '@/utils/generate-metadata';
+import { Metadata } from 'next';
 
 const inter = Baloo_2({ subsets: ['latin'] });
 
-export const metadata = generateMetadata({
-  title: 'Programação e Design | Gabriel Asakawa',
+export const metadata: Metadata = {
+  title: { default: 'Programação e Design | Gabriel Asakawa', template: '%s' },
   description:
     'Blog con conteúdo sobre tecnologia, programação, design e empreendedorismo. Fique por dentro dos melhores conteúdos e esteja atualizado',
-});
+};
 
 export default function RootLayout({
   children,

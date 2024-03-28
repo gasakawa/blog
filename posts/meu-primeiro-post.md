@@ -3,6 +3,8 @@ title: 'Meu primeiro post'
 date: '2020-04-27'
 excerpt: Seja bem vindo
 category: geral
+tags: ''
+authors: 'Gabriel Asakawa'
 ---
 
 ## O que esperar deste blog?

@@ -3,6 +3,8 @@ title: 'Salvando alterações locais com o DevTools do browser'
 date: '2020-05-13'
 excerpt: 'Como salvar mudanças no CSS ou HTML direto na sua máquina usando DevTools'
 category: frontend
+tags: ''
+authors: 'Gabriel Asakawa'
 ---
 
 Muitas vezes na hora de desenvolver um site ou uma página web, nos deparamos com a necessidade de testar algumas mudanças em propriedades **CSS**, código **HTML** ou inclusive no **Javascript** para validar rapidamente uma mudança.

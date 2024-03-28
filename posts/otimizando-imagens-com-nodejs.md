@@ -2,7 +2,9 @@
 title: 'Otimizando imagens com NodeJS'
 date: '2020-09-18'
 excerpt: 'Como otimizar imagens utilizando a lib sharp'
-category: javascript,nodejs
+category: 'backend,frontend'
+tags: javascript,nodejs
+authors: 'Gabriel Asakawa'
 ---
 
 Estava fazendo um projeto pessoal e me deparei com a necessidade de otimizar o tamanho das imagens que precisava utilizar. Existem vários serviços online para isto, (redimensionar, cortar, reduzir peso, etc). Porém encontrei uma lib javascript bastante interessante. O nome dela é [sharp](https://github.com/lovell/sharp) e quero compartilhar com vocês como resolvi o meu problema.
@@ -22,7 +24,7 @@ const compress = async () => {
   const files = directory.filter(file => pattern.test(file));
 
   if (files.length > 0) {
-  // O `async`/ `await` não funciona nas funções do Array, então é necessário utilizar `await Promise.all`, porque a função da lib `sharp` que será utilizada retorna uma promise. 
+    // O `async`/ `await` não funciona nas funções do Array, então é necessário utilizar `await Promise.all`, porque a função da lib `sharp` que será utilizada retorna uma promise.
     await Promise.all(
       files.map(async file => {
         const content = await fs.readFile(`${process.env.SRC_FOLDER}/${file}`);
@@ -37,11 +39,8 @@ const compress = async () => {
           })
           .toBuffer();
 
-        await fs.writeFile(
-          `${process.env.DEST_FOLDER}/${file}`,
-          compressContent
-        );
-      })
+        await fs.writeFile(`${process.env.DEST_FOLDER}/${file}`, compressContent);
+      }),
     );
   }
 };
@@ -49,7 +48,7 @@ const compress = async () => {
 compress();
 ```
 
-*Bora explicar ele então?*
+_Bora explicar ele então?_
 
 ```javascript
 require('dotenv/config');
@@ -77,15 +76,15 @@ Aqui usamos as funções da lib `sharp`
 
 ```javascript
 const compressContent = await sharp(content)
-.resize(Number(process.env.WIDTH), Number(process.env.HEIGHT), {
+  .resize(Number(process.env.WIDTH), Number(process.env.HEIGHT), {
     fit: 'inside',
     withoutEnlargement: true,
-})
-.toFormat('jpeg', {
+  })
+  .toFormat('jpeg', {
     progressive: true,
     quality: 90,
-})
-.toBuffer();
+  })
+  .toBuffer();
 ```
 
 - `resize`, redemensiona o tamanho da imágem, aqui pode usar o tamanho definido nas variáveis de ambiente.

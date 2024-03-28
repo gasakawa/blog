@@ -2,14 +2,16 @@
 title: 'Fundamentos de Javascript - Bind, Call e Apply'
 date: '2022-07-29'
 excerpt: 'O que são os métodos bind, call e apply em funções dentro do javascript'
-category: javascript
+category: 'backend'
+tags: 'javascript'
+authors: 'Gabriel Asakawa'
 ---
 
 Toda função Javascript é de fato um objeto `Function` e entre os métodos disponíveis no objeto Function, temos o `bind`, `call` e `apply`. Talvez você já se deparou com eles em algúm código e neste post vou explicar como eles funcionam e quando podem ser utilizados.
 
 ### bind()
 
-O método **bind()**, cria uma nova função, que quando chamada atribui à seu operador `this` ao valor entregue. Em outras palavras, ao utilizar bind, o *this* fará referencia ao objeto enviado como parâmetro no bind. Parece ser um pouco confuso, mas vamos ver um exemplo.
+O método **bind()**, cria uma nova função, que quando chamada atribui à seu operador `this` ao valor entregue. Em outras palavras, ao utilizar bind, o _this_ fará referencia ao objeto enviado como parâmetro no bind. Parece ser um pouco confuso, mas vamos ver um exemplo.
 
 ```javascript
 const person = {
@@ -18,7 +20,7 @@ const person = {
     return this.age;
   },
 };
-console.log(person.getAge()) // 18
+console.log(person.getAge()); // 18
 ```
 
 Agora, se atribuir a função `getAge` a uma variável e executar a função o que acontece?
@@ -28,9 +30,9 @@ const retrieveAge = person.getAge;
 console.log(retrieveAge()); // undefined
 ```
 
-O resultado é `undefined` porque a função é invocada ou executada no nível do escopo `global` e não no escopo do objeto `person`. Neste escopo o *this* não tem a propriedade *age*.
+O resultado é `undefined` porque a função é invocada ou executada no nível do escopo `global` e não no escopo do objeto `person`. Neste escopo o _this_ não tem a propriedade _age_.
 
-Ao utilizar o `bind()`, o *this* será referente ao escopo do objeto `person`.
+Ao utilizar o `bind()`, o _this_ será referente ao escopo do objeto `person`.
 
 ```javascript
 const retrieveAge = person.getAge.bind(person);
@@ -62,7 +64,7 @@ const person = {
   },
 };
 
-console.log(person.getNameAndAge.bind({age: 25}, 'Maria')()); // Maria is 25 years old
+console.log(person.getNameAndAge.bind({ age: 25 }, 'Maria')()); // Maria is 25 years old
 ```
 
 ### call()
