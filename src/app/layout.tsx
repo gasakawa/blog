@@ -1,5 +1,4 @@
 import { Baloo_2 } from 'next/font/google';
-import {} from 'next/';
 import './globals.css';
 import Sidebar from './components/Sidebar';
 import { Metadata } from 'next';
