@@ -8,12 +8,9 @@ import { ptBR } from 'date-fns/locale';
 import './post.css';
 import 'highlight.js/styles/stackoverflow-dark.css';
 import Comments from '../components/Comments';
+import { ParamsType } from '@/types/param.type';
 
-type Props = {
-  params: { slug: string };
-};
-
-export function generateMetadata({ params }: Props): Metadata {
+export function generateMetadata({ params }: ParamsType): Metadata {
   const post = getPostData(params.slug);
   const keywords = Array.isArray(post.metadata.tags.split(','))
     ? post.metadata.tags.split(',').join(',')
@@ -33,7 +30,7 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-const PostPage = async ({ params }: { params: any }) => {
+const PostPage = async ({ params }: ParamsType) => {
   const post = getPostData(params.slug);
 
   const tags = post.metadata.tags.length > 0 ? post.metadata.tags.split(',') : undefined;
