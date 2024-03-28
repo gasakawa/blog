@@ -7,6 +7,7 @@ import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import './post.css';
 import 'highlight.js/styles/stackoverflow-dark.css';
+import Comments from '../components/Comments';
 
 type Props = {
   params: { slug: string };
@@ -39,10 +40,11 @@ const PostPage = async ({ params }: { params: any }) => {
   const minRead = readingTime(post.content, 150, 'pt-br').minutes;
 
   const content = await markdownToHtml(post.content);
+  const shortName = process.env.DISQUS_SHORT_NAME ?? '';
 
   return (
     <>
-      <div className="flex flex-col pt-20 pb-0 items-start">
+      <article className="flex flex-col pt-20 pb-0 items-start">
         <header>
           <div className="back-listing">
             <Link href={`/`}>&larr; Voltar na listagem</Link>
@@ -67,7 +69,8 @@ const PostPage = async ({ params }: { params: any }) => {
         <section className="post-container">
           <div dangerouslySetInnerHTML={{ __html: content }} className="flex flex-col"></div>
         </section>
-      </div>
+      </article>
+      <Comments slug={params.slug} title={post.metadata.title} shortName={shortName} />
     </>
   );
 };

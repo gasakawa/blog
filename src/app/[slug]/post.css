@@ -169,11 +169,17 @@ ol {
   }
 
   .post-container p {
-    margin: 0 auto 1.6rem;
+    margin: 1rem 0;
   }
 
   .post-container pre {
     margin-bottom: 1rem;
     word-break: break-all;
+  }
+
+  .post-container ul,
+  ol {
+    padding: 0;
+    margin: 1rem 1.6rem;
   }
 }
