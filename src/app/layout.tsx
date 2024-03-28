@@ -1,7 +1,9 @@
-import { Inter, Baloo_2 } from 'next/font/google';
+import { Baloo_2 } from 'next/font/google';
+import {} from 'next/';
 import './globals.css';
 import Sidebar from './components/Sidebar';
 import { Metadata } from 'next';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const inter = Baloo_2({ subsets: ['latin'] });
 
@@ -18,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt_BR">
+      <GoogleTagManager gtmId="GTM-MNXHCPX" />
       <body className={inter.className}>
         <div className="flex flex-col sm:flex-row">
           <Sidebar />

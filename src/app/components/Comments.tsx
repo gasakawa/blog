@@ -4,7 +4,6 @@ import React from 'react';
 
 export default function Comments({ slug, title, shortName }: { slug: string; title: string; shortName: string }) {
   const completeUrl = `https://gasakawa.com/${slug}`;
-  console.log('🚀 ~ Comments ~ shortName:', shortName);
   const config = {
     url: completeUrl,
     identifier: slug,
