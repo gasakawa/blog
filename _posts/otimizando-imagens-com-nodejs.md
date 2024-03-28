@@ -1,6 +1,6 @@
 ---
 title: 'Otimizando imagens com NodeJS'
-date: '2020-09-18'
+date: '2020-09-18T00:00:00'
 excerpt: 'Como otimizar imagens utilizando a lib sharp'
 category: 'backend,frontend'
 tags: javascript,nodejs

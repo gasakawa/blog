@@ -1,6 +1,6 @@
 ---
 title: 'O que é document flow?'
-date: '2021-02-03'
+date: '2021-02-03T00:00:00'
 excerpt: 'Um resumo sobre o document flow em documentos HTML'
 category: frontend
 tags: 'html'

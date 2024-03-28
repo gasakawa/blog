@@ -2,7 +2,7 @@ export const posts = [
   {
     slug: 'fundamentos-de-javascript-bind-call-apply',
     category: 'backend',
-    dt_created: '2022-07-19',
+    date: '2022-07-19',
     title: 'Fundamentos de Javascript - Bind, Call e Apply',
     excerpt: 'CO que são os métodos bind, call e apply em funções dentro do javascript',
     tags: 'javascript',
@@ -10,7 +10,7 @@ export const posts = [
   {
     slug: 'o-que-e-document-flow',
     category: 'frontend',
-    dt_created: '2021-02-03',
+    date: '2021-02-03',
     title: 'O que é document flow?',
     excerpt: 'Um resumo sobre o document flow em documentos HTML',
     tags: 'html',
@@ -18,7 +18,7 @@ export const posts = [
   {
     slug: 'otimizando-imagens-com-nodejs',
     category: 'backend',
-    dt_created: '2020-09-18',
+    date: '2020-09-18',
     title: 'Otimizando imagens com NodeJS',
     excerpt: 'Como otimizar imagens utilizando a lib sharp',
     tags: 'javascript,nodejs',
@@ -26,7 +26,7 @@ export const posts = [
   {
     slug: 'desestruturacao-de-objetos-e-arrays-em-js',
     category: 'frontend,backend',
-    dt_created: '2020-05-19',
+    date: '2020-05-19',
     title: 'Desestruturação de objetos e arrays em Javascript',
     excerpt: 'Como usar a desestruturação em Javascript',
     tags: 'javascript',
@@ -34,14 +34,14 @@ export const posts = [
   {
     slug: 'salvando-alteracoes-locais-com-o-devtools-do-browser',
     category: 'frontend',
-    dt_created: '2020-05-13',
+    date: '2020-05-13',
     title: 'Salvando alterações locais com o DevTools do browser',
     excerpt: 'Como salvar mudanças no CSS ou HTML direto na sua máquina usando DevTools',
   },
   {
     slug: 'meu-primeiro-post',
     category: 'geral',
-    dt_created: '2020-04-27',
+    date: '2020-04-27',
     title: 'Meu primeiro post',
     excerpt: 'Seja bem-vindo',
   },

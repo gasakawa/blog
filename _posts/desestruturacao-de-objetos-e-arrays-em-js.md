@@ -1,6 +1,6 @@
 ---
 title: 'Desestruturação de objetos e arrays em Javascript'
-date: '2020-05-19'
+date: '2020-05-19T00:00:00'
 excerpt: 'Como usar a desestruturação em Javascript'
 category: 'Backend'
 tags: 'javascript'

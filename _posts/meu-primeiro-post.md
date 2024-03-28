@@ -1,9 +1,8 @@
 ---
 title: 'Meu primeiro post'
-date: '2020-04-27'
+date: '2020-04-27T00:00:00'
 excerpt: Seja bem vindo
 category: geral
-tags: ''
 authors: 'Gabriel Asakawa'
 ---
 

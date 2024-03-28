@@ -1,4 +1,4 @@
-import { PostType } from '@/types/post.type';
+import { Post, PostType } from '@/types/post.type';
 import _ from 'lodash';
 import { posts } from './posts';
 
@@ -6,7 +6,7 @@ export function getPosts(pg = 0): PostType[] {
   const rc = Number(process.env.POST_PER_PAGE);
   const postList = _.chunk(posts, rc);
 
-  return postList[pg] as PostType[];
+  return postList[pg] as Post[];
 }
 
 export function getPostsByTag(tag: string, pg = 0) {
@@ -15,7 +15,7 @@ export function getPostsByTag(tag: string, pg = 0) {
 
   const postList = _.chunk(postsByTag, rc);
 
-  return postList[pg] as PostType[];
+  return postList[pg] as Post[];
 }
 
 export function getPostsByCategory(tag: string, pg = 0) {
@@ -24,5 +24,5 @@ export function getPostsByCategory(tag: string, pg = 0) {
 
   const postList = _.chunk(postsByCategory, rc);
 
-  return postList[pg] as PostType[];
+  return postList[pg] as Post[];
 }

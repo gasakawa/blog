@@ -16,7 +16,7 @@ export default function PostList({ posts }: { posts: PostType[] }): React.JSX.El
             >
               <div className="flex justify-center items-center">
                 <time className="text-base">
-                  {format(new Date(post.dt_created), "d 'de' MMM 'de' yyyy", { locale: ptBR })}
+                  {format(new Date(post.date), "d 'de' MMM 'de' yyyy", { locale: ptBR })}
                 </time>
                 {post.category.split(',').map(cat => (
                   <span

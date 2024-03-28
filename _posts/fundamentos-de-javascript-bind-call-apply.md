@@ -1,6 +1,6 @@
 ---
 title: 'Fundamentos de Javascript - Bind, Call e Apply'
-date: '2022-07-29'
+date: '2022-07-29T00:00:00'
 excerpt: 'O que são os métodos bind, call e apply em funções dentro do javascript'
 category: 'backend'
 tags: 'javascript'

@@ -12,8 +12,8 @@ import { getPostData } from '@/lib/api';
 
 export function generateMetadata({ params }: ParamsType): Metadata {
   const post = getPostData(params.slug);
-  const keywords = Array.isArray(post.metadata.tags.split(','))
-    ? post.metadata.tags.split(',').join(',')
+  const keywords = Array.isArray(post.metadata.tags?.split(','))
+    ? post.metadata.tags?.split(',').join(',')
     : [post.metadata.tags];
 
   return {
@@ -33,7 +33,7 @@ export function generateMetadata({ params }: ParamsType): Metadata {
 const PostPage = async ({ params }: ParamsType) => {
   const post = getPostData(params.slug);
 
-  const tags = post.metadata.tags.length > 0 ? post.metadata.tags.split(',') : undefined;
+  const tags = post.metadata.tags?.length > 0 ? post.metadata.tags?.split(',') : undefined;
   const minRead = readingTime(post.content, 150, 'pt-br').minutes;
 
   const content = await markdownToHtml(post.content);
