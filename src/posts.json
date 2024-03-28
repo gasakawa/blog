@@ -21,7 +21,7 @@
     "dt_created": "2020-09-18",
     "title": "Otimizando imagens com NodeJS",
     "excerpt": "Como otimizar imagens utilizando a lib sharp",
-    "tags": "javascript"
+    "tags": "javascript,nodejs"
   },
   {
     "slug": "desestruturacao-de-objetos-e-arrays-em-js",

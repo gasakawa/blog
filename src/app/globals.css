@@ -46,3 +46,39 @@ a:hover {
   color: #1fa1f2;
   text-decoration: underline;
 }
+
+.blog-container {
+  background: #f0f0f3;
+  min-height: 100vh;
+  padding: 1rem 3.75rem 0 3.75rem;
+  width: 100%;
+}
+
+.sidebar {
+  align-items: center;
+  border-right: 1px solid #dedede;
+  background: #3d423f;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .blog-container {
+    padding: 5rem 1rem 2rem 1rem;
+    width: auto;
+  }
+
+  .sidebar {
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem 2rem;
+    width: 100%;
+    flex-direction: row;
+    position: fixed;
+    min-height: auto;
+  }
+}

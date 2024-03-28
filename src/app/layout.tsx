@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="pt_BR">
       <body className={inter.className}>
-        <Sidebar />
-        <main className="min-h-[100vh] flex-1 pt-[4.125rem] pr-0 pb-[3rem] pl-4 md:pt-4 md:pr-[3.75rem] md:pb-0 md:pl-[21rem] w-[100vw]">
-          {children}
-        </main>
+        <div className="flex flex-col sm:flex-row">
+          <Sidebar />
+          <main className="blog-container">{children}</main>
+        </div>
       </body>
     </html>
   );
