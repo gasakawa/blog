@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import markdownToHtml from '@/utils/markdown-to-html';
-import { getPostData } from '@/utils/post.utils';
 import Link from 'next/link';
 import { readingTime } from 'reading-time-estimator';
 import { format } from 'date-fns';
@@ -9,6 +8,7 @@ import './post.css';
 import 'highlight.js/styles/stackoverflow-dark.css';
 import Comments from '../components/Comments';
 import { ParamsType } from '@/types/param.type';
+import { getPostData } from '@/lib/api';
 
 export function generateMetadata({ params }: ParamsType): Metadata {
   const post = getPostData(params.slug);

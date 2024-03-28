@@ -1,8 +1,8 @@
-import { readFileSync, readdirSync } from 'fs';
+import { readFileSync } from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-const postsDirectory = path.join(process.cwd(), 'posts');
+const postsDirectory = path.join(process.cwd(), '_posts');
 
 export const getPostData = (slug: string) => {
   const fullPath = path.join(postsDirectory, `${slug}.md`);
