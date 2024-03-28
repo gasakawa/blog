@@ -36,3 +36,11 @@ export const getAllPosts = () => {
 export const getPostSlugs = () => {
   return readdirSync(postsDirectory);
 };
+
+export const getPostsByCategory = (category: string) => {
+  return getAllPosts().filter(post => post.category.includes(category));
+};
+
+export const getPostsByTag = (tag: string) => {
+  return getAllPosts().filter(post => post.tags?.includes(tag));
+};

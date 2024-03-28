@@ -57,7 +57,7 @@ const PostPage = async ({ params }: ParamsType) => {
             <div className="flex py-0 px-5">
               {tags.map((tag: string) => (
                 <span key={tag} className="post-tags">
-                  <Link href={`/tags/${tag}`}>{tag}</Link>
+                  <Link href={`/tags/${tag}`}>{tag.toUpperCase()}</Link>
                 </span>
               ))}
             </div>

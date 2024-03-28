@@ -7,7 +7,7 @@ import { PostType } from '@/types/post.type';
 export default function PostList({ posts }: { posts: PostType[] }): React.JSX.Element {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-[3.755rem] mr-[10px] mb-0 ml-[10px] gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-[2rem] mr-[10px] mb-0 ml-[10px] gap-5">
         {posts !== undefined &&
           posts.map(post => (
             <div
